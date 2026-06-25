@@ -16,7 +16,6 @@ body {
 
 .horizontal-sizer {
 	max-width: 800px;
-	min-width: 570px;
 	margin: 0 auto;
 }
 
@@ -83,8 +82,9 @@ body {
 
 .media-banner {
 	display: flex;
-	margin: 2em 0;
-	column-gap: 0.2em;
+	flex-wrap: wrap-reverse;
+	margin-top: 2em;
+	column-gap: 0.8em;
 }
 
 .media-banner .caption-column {
@@ -107,6 +107,8 @@ body {
 }
 
 .media-banner .caption-column p {
+	flex: 1 1 250px;
+
 	font-size: 1em;
 	color: #40050a;
 	margin: 1em 0 1em 0.3em;
@@ -115,7 +117,8 @@ body {
 }
 
 .media-banner .image-column {
-	flex: 0 0 40%;
+	flex: 0 0 250px;
+	margin: 0 auto 1.5em auto;
 	aspect-ratio: 1/1;
 	max-height: 250px;
 	max-width: 250px;
