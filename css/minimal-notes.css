@@ -111,14 +111,15 @@ body {
 
 	font-size: 1em;
 	color: #40050a;
-	margin: 1em 0 1em 0.3em;
+	margin: 1em 0 1em 0.25em;
 	
 	
 }
 
 .media-banner .image-column {
 	flex: 0 0 250px;
-	margin: 0 auto 1.5em auto;
+	margin: 0 auto auto auto;
+	padding-bottom: 1.5em;
 	aspect-ratio: 1/1;
 	max-height: 250px;
 	max-width: 250px;
@@ -130,4 +131,28 @@ body {
 	height: 100%;
 	object-fit: cover;
 	object-position: 50% 0%;
+}
+
+.element-paragraph {
+	margin-left: 0.4em;
+}
+
+span.highlight {
+	font-weight: 600;
+	color: #c82832;
+}
+
+.element-paragraph a {
+	color: #05403e;
+	letter-spacing: 0.4px;
+	margin-right: 0.1em;
+	
+	text-underline-offset: 2px;
+	text-decoration: underline solid 2px;
+	text-decoration-color: #05403e66;
+	transition: text-decoration-color 0.15s ease-in-out;
+}
+
+.element-paragraph a:hover {
+	text-decoration-color: #05403ecc;
 }
