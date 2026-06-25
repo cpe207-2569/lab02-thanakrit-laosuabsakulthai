@@ -1,0 +1,130 @@
+@font-face {
+	font-family: "Google Sans Flex";
+	src: url(https://fonts.gstatic.com/s/googlesansflex/v5/t5s6IQcYNIWbFgDgAAzZ34auoVyXkJCOvp3SFWJbN5hF8Ju1x5tKByN2l9sI40swNJwakXdYAZzz0jbnJ4qFQO5tGjLvDSkV4DyKMo6qQzwliVdHySgxyRg2.woff2) format("woff2");
+}
+
+body {
+	font-family: "Google Sans Flex";
+	letter-spacing: 0.6px;
+}
+
+
+.reading-view {
+	display: flex;
+	margin: 0 0.2em;
+}
+
+.horizontal-sizer {
+	max-width: 800px;
+	min-width: 570px;
+	margin: 0 auto;
+}
+
+.element-image {
+	display: flex;
+	justify-content: center;
+	margin: 2em 0;
+}
+
+.element-heading {
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	background-color: #c82832;
+	
+	padding: 1.6em 1em;
+}
+
+.element-heading h1 {
+	margin: 0;
+}
+
+.navigation-menu {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin: 1.4em 0;
+	color: #05403e;
+}
+
+.navigation-menu a {
+	font-size: 95%;
+	color: inherit;
+	font-weight: 500;
+	letter-spacing: 0.4px;
+	padding: 0.4em 1em;
+	border-radius: 10px;
+	background-color: #e6faad;
+	
+	text-underline-offset: 1.5px;
+	text-decoration: underline solid 2px;
+	text-decoration-color: #05403e66;
+	transition: text-decoration-color 0.15s ease-in-out;
+}
+
+.navigation-menu a:hover {
+	text-decoration-color: #05403e;
+}
+
+.horizontal-rule {
+	margin: 1.5em 0 1.4em 0;
+	padding: 0 0.2em;
+} 
+
+.horizontal-rule hr {
+	border: none;
+	border-top: 2px solid #c82832;
+}
+
+.element-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.media-banner {
+	display: flex;
+	margin: 2em 0;
+	column-gap: 0.2em;
+}
+
+.media-banner .caption-column {
+	flex: 1 0;
+	padding-left: 0.2em;
+}
+
+.media-banner .caption-column h2 {
+	margin: 0;
+	margin-left: 0.1em;
+	color: #05403e;
+}
+
+.media-banner .caption-column h6 {
+	font-size: 0.9em;
+	color: #05403e;
+	margin: 0.2em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.media-banner .caption-column p {
+	font-size: 1em;
+	color: #40050a;
+	margin: 1em 0 1em 0.3em;
+	
+	
+}
+
+.media-banner .image-column {
+	flex: 0 0 40%;
+	aspect-ratio: 1/1;
+	max-height: 250px;
+	max-width: 250px;
+	overflow: hidden;
+}
+
+.media-banner .image-column img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 0%;
+}
